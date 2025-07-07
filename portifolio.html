@@ -71,21 +71,12 @@
       color: #009e88;
     }
 
-    .project {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #eee;
-    }
-
-    .project pre {
-      background: #f4f4f4;
-      padding: 15px;
-      border-radius: 5px;
-      overflow-x: auto;
-    }
-
-    .project h3 {
-      color: #007acc;
+    .descricao {
+      font-size: 16px;
+      color: #555;
+      margin-top: 5px;
+      margin-bottom: 30px;
+      line-height: 1.6;
     }
   </style>
 </head>
@@ -105,25 +96,16 @@
   <!-- Conteúdo principal -->
   <main>
     <h2>Portfólio</h2>
-   
-    <div class="project">
-      <h3>💰 Cofrinho de Moedas (Java)</h3>
-      <p>Este projeto em Java simula um cofrinho digital. O usuário pode adicionar valores e consultar o total acumulado. É uma aplicação simples que demonstra conceitos de orientação a objetos.</p>
-      
-      <pre><code>public class Cofrinho {
-    private double total;
-
-    public void adicionar(double valor) {
-        total += valor;
-    }
-
-    public double getTotal() {
-        return total;
-    }
-}</code></pre>
-
-      <p>🔗 <a href="https://github.com/PKonradDev/Cofrinho-de-moedas" target="_blank">Ver código completo no GitHub</a></p>
-    </div>
+    <ul>
+      <li>
+        <a href="https://github.com/PKonradDev/Cofrinho-de-moedas" target="_blank">
+          💰 Cofrinho de Moedas (Java)
+        </a>
+        <p class="descricao">
+          Atividade prática desenvolvida em Java que simula um cofrinho digital de moedas. O sistema permite adicionar, remover, listar e somar valores armazenados, além de realizar conversões entre diferentes moedas: Real (BRL), Dólar (USD) e Euro (EUR). O projeto aplica conceitos fundamentais de programação orientada a objetos, como encapsulamento, herança e polimorfismo.
+        </p>
+      </li>
+    </ul>
   </main>
 
 </body>
