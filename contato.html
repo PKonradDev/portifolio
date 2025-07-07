@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o tipo de documento como HTML5 e o idioma como português do Brasil -->
+<head>
+  <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 para suportar acentuação -->
+  <title>Contato - Patryck</title> <!-- Título que aparece na aba do navegador -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna e legível */
+      background: #f7f9fc; /* Cor de fundo suave */
+      color: #333; /* Cor padrão do texto */
+    }
+
+    header {
+      background-color: #fff; /* Fundo branco para o cabeçalho */
+      padding: 20px 40px; /* Espaçamento interno */
+      display: flex; /* Layout flexível */
+      justify-content: space-between; /* Espaçamento entre elementos */
+      align-items: center; /* Alinhamento vertical central */
+      border-bottom: 1px solid #ddd; /* Linha sutil de separação */
+    }
+
+    header h1 {
+      font-size: 20px;
+      color: #444; /* Cor do nome no cabeçalho */
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none; /* Remove o sublinhado dos links */
+      color: #444; /* Cor do texto dos links */
+      font-weight: bold; /* Deixa os links em negrito */
+    }
+
+    nav a:hover {
+      color: #007acc; /* Cor azul quando o mouse passa por cima */
+    }
+
+    main {
+      max-width: 800px; /* Largura máxima do conteúdo principal */
+      margin: 40px auto; /* Centraliza horizontalmente com espaçamento vertical */
+      background: #fff; /* Fundo branco para contraste */
+      padding: 40px;
+      border-radius: 10px; /* Cantos arredondados */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Sombra leve ao redor */
+    }
+
+    h2 {
+      text-align: center; /* Centraliza o título da seção */
+      color: #222; /* Cor escura para destaque */
+      margin-bottom: 30px;
+    }
+
+    .contato-info {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contato-info p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column; /* Alinha os campos verticalmente */
+      gap: 20px; /* Espaçamento entre os elementos */
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    textarea {
+      resize: vertical; /* Permite redimensionar só na vertical */
+      min-height: 120px; /* Altura mínima para área de texto */
+    }
+
+    button {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: #00bfa6; /* Cor principal do botão */
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s; /* Suaviza mudança de cor no hover */
+    }
+
+    button:hover {
+      background-color: #009e88; /* Cor ao passar o mouse */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho com nome e navegação -->
+  <header>
+    <h1>Patryck Konrad de Lima</h1>
+    <nav>
+      <a href="index.html">Sobre</a>
+      <a href="formacao.html">Formação</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h2>Entre em Contato</h2>
+
+    <!-- Informações de contato visíveis -->
+    <div class="contato-info">
+      <p><strong>Email: patryckkonrad@icloud.com</strong></p>
+      <p><strong>Telefone:</strong> +55(41)99741-4878</p>
+    </div>
+
+    <!-- Formulário para envio de mensagem -->
+    <form>
+      <div>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" value="" required>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" value="" required>
+      </div>
+
+      <div>
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+      </div>
+
+      <button type="submit">Enviar</button> <!-- Botão estilizado para envio -->
+    </form>
+  </main>
+
+</body>
+</html>
