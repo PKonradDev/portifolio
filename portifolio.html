@@ -70,6 +70,23 @@
     li a:hover {
       color: #009e88;
     }
+
+    .project {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+
+    .project pre {
+      background: #f4f4f4;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    .project h3 {
+      color: #007acc;
+    }
   </style>
 </head>
 <body>
@@ -88,9 +105,25 @@
   <!-- Conteúdo principal -->
   <main>
     <h2>Portfólio</h2>
-    <ul>
-      <li><a href="https://github.com/PKonradDev/Cofrinho-de-moedas" target="_blank">💰Cofrinho de Moedas</a></li> <!--link do reposit[orio GIThub]-->
-    </ul>
+   
+    <div class="project">
+      <h3>💰 Cofrinho de Moedas (Java)</h3>
+      <p>Este projeto em Java simula um cofrinho digital. O usuário pode adicionar valores e consultar o total acumulado. É uma aplicação simples que demonstra conceitos de orientação a objetos.</p>
+      
+      <pre><code>public class Cofrinho {
+    private double total;
+
+    public void adicionar(double valor) {
+        total += valor;
+    }
+
+    public double getTotal() {
+        return total;
+    }
+}</code></pre>
+
+      <p>🔗 <a href="https://github.com/PKonradDev/Cofrinho-de-moedas" target="_blank">Ver código completo no GitHub</a></p>
+    </div>
   </main>
 
 </body>
